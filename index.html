@@ -92,7 +92,7 @@
 				});
 				
 				socket.on('new message' , function(data){
-					$chat.prepend ('<div class="well"><strong>'+data.user+':</strong>' +data.msg+'</div>');
+					$chat.append ('<div class="well"><strong>'+data.user+':</strong>' +data.msg+'</div>');
 				});
 				
 				$userform.submit(function(e){
